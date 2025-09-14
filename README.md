@@ -1,21 +1,27 @@
-# DenseNet121
-This repository showcases a deep learning project where DenseNet121, a pretrained convolutional neural network, is fine-tuned using PyTorch for image classification. The model is trained and validated on the Waste Classification Dataset, which consists of organic and recyclable waste images.
+# Waste Classification using DenseNet121 (PyTorch)
 
-The project covers:
+This repository contains a PyTorch implementation of a waste image classification model trained on the Waste Classification dataset: https://www.kaggle.com/datasets/techsash/waste-classification-data
 
-  ⚙️ Dataset preparation with stratified train/validation/test splits
-  
-  🖼️ Data augmentation and normalization using torchvision.transforms
-  
-  🔥 Fine-tuning DenseNet121 with a custom classifier
-  
-  📊 Training/validation loops with loss & accuracy tracking
-  
-  ✅ Evaluation on test data and visualization of predictions
-  
-  📈 Learning curve plots to analyze performance
+- Uses a pretrained DenseNet121 backbone
+- Initially, only the classifier was unfrozen, achieving good results:
+  - Train Accuracy: ~91.25%
+  - Validation Accuracy: ~93.46%
+- To improve performance, DenseBlock 4 was unfrozen along with the classifier for fine-tuning, achieving the best results at epoch 10
 
-This repository is intended as a portfolio project demonstrating transfer learning, model evaluation, and practical PyTorch implementation.
+Best Results (epoch 10):
+- Train Accuracy: 95.49%
+- Validation Accuracy: 95.21%
+- Test Accuracy: 93.35%
 
+Features:
+- Supports progressive fine-tuning (classifier only → last dense block + classifier)
+- Automatically saves best model weights based on validation accuracy
+- Includes preprocessing, augmentation, and evaluation scripts
+
+Tech Stack:
+- Python 3.x
+- PyTorch
+- Torchvision (DenseNet121)
+- 
 # Dataset 
 👉 can be accessed through https://www.kaggle.com/datasets/techsash/waste-classification-data
