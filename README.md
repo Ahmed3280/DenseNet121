@@ -22,6 +22,3 @@ Tech Stack:
 - Python 3.x
 - PyTorch
 - Torchvision (DenseNet121)
-- 
-# Dataset 
-👉 can be accessed through https://www.kaggle.com/datasets/techsash/waste-classification-data
