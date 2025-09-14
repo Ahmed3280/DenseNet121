@@ -1,3 +1,4 @@
+#DenseNet121
 This repository showcases a deep learning project where DenseNet121, a pretrained convolutional neural network, is fine-tuned using PyTorch for image classification. The model is trained and validated on the Waste Classification Dataset, which consists of organic and recyclable waste images.
 
 The project covers:
