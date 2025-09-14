@@ -15,3 +15,6 @@ The project covers:
   📈 Learning curve plots to analyze performance
 
 This repository is intended as a portfolio project demonstrating transfer learning, model evaluation, and practical PyTorch implementation.
+
+# Dataset 
+👉 can be accessed through https://www.kaggle.com/datasets/techsash/waste-classification-data
